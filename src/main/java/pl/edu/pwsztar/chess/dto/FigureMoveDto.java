@@ -1,9 +1,9 @@
-package pl.edu.pwsztar.domain.dto;
+package pl.edu.pwsztar.chess.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import pl.edu.pwsztar.domain.enums.FigureType;
+import pl.edu.pwsztar.chess.enums.FigureType;
 
 import java.io.Serializable;
 
@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Getter
 @ToString
 public class FigureMoveDto implements Serializable {
-    private String source;
+    private String start;
     private String destination;
     private FigureType type;
 }
